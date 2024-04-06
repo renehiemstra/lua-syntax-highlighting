@@ -1,0 +1,25 @@
+{
+  "name": "lua",
+  "displayName": "lua-syntax-highlighting",
+  "description": "Syntax highlighting for lua.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lua",
+      "aliases": ["Lua", "lua"],
+      "extensions": [".lua",".t",".p8",".rockspec",".luacheckrc",".lakefile"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lua",
+      "scopeName": "source.lua",
+      "path": "./syntaxes/lua.json"
+    }]
+  }
+}
